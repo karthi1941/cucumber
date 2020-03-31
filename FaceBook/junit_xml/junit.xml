@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="62.740854">
+    <testcase classname="Face book sign up" name="Facebook Test Scenario" time="32.898041">
+        <failure message="org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Feb&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LENOVO', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)&#13;&#10;&#9;at stepDefinition.FacebookStepDefinition.user_enters_DOB(FacebookStepDefinition.java:53)&#13;&#10;&#9;at ✽.user enters DOB(C:/Users/ELCOT/eclipse-workspace/Cucumber/FaceBook/src/main/java/Features/facebook.feature:9)&#13;&#10;">
+            <![CDATA[Given User is already on Facebook Page......................................passed
+When title of login page if facebook........................................passed
+Then user enters "Jegan" and "Jas"..........................................passed
+Then user entered "jeganjas18@gmail.com" and "8667227438"...................passed
+Then user enters DOB........................................................failed
+Then user enters Gender.....................................................skipped
+Then user click signup button...............................................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Feb
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at stepDefinition.FacebookStepDefinition.user_enters_DOB(FacebookStepDefinition.java:53)
+	at ✽.user enters DOB(C:/Users/ELCOT/eclipse-workspace/Cucumber/FaceBook/src/main/java/Features/facebook.feature:9)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Face book sign up" name="Facebook Test Scenario 2" time="29.842813">
+        <failure message="org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Feb&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LENOVO', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)&#13;&#10;&#9;at stepDefinition.FacebookStepDefinition.user_enters_DOB(FacebookStepDefinition.java:53)&#13;&#10;&#9;at ✽.user enters DOB(C:/Users/ELCOT/eclipse-workspace/Cucumber/FaceBook/src/main/java/Features/facebook.feature:9)&#13;&#10;">
+            <![CDATA[Given User is already on Facebook Page......................................passed
+When title of login page if facebook........................................passed
+Then user enters "Karthi" and "velu"........................................passed
+Then user entered "karthivelu1941@gmail.com" and "8148791285"...............passed
+Then user enters DOB........................................................failed
+Then user enters Gender.....................................................skipped
+Then user click signup button...............................................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Feb
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at stepDefinition.FacebookStepDefinition.user_enters_DOB(FacebookStepDefinition.java:53)
+	at ✽.user enters DOB(C:/Users/ELCOT/eclipse-workspace/Cucumber/FaceBook/src/main/java/Features/facebook.feature:9)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

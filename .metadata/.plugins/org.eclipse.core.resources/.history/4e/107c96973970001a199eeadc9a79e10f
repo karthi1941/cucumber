@@ -1,0 +1,38 @@
+package stepDefinition;
+
+public class LoginStepDefinition {
+	
+	
+	@Given("User is already on Login Page")
+	public void user_is_already_on_Login_Page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("title of login page if Free CRM")
+	public void title_of_login_page_if_Free_CRM() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("user enters username and password")
+	public void user_enters_username_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("user enter on login button")
+	public void user_enter_on_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("user is on home page")
+	public void user_is_on_home_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+
+
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="173.268348">
+    <testcase classname="Face book sign up" name="Facebook Test Scenario" time="92.761923">
+        <failure message="java.lang.IndexOutOfBoundsException: row: 1, Height: 1&#13;&#10;&#9;at io.cucumber.datatable.DataTable.rangeCheckRow(DataTable.java:300)&#13;&#10;&#9;at io.cucumber.datatable.DataTable.row(DataTable.java:398)&#13;&#10;&#9;at stepDefinition.FacebookStepDefinition.user_enters_firstname_and_lastname(FacebookStepDefinition.java:37)&#13;&#10;&#9;at ✽.user enters firstname and lastname(C:/Users/ELCOT/eclipse-workspace/Cucumber/Datadriven/src/main/java/Features/facebook.feature:7)&#13;&#10;">
+            <![CDATA[Given User is already on Facebook Page......................................passed
+When title of login page if facebook........................................passed
+Then user enters firstname and lastname.....................................failed
+Then user entered email and password........................................undefined
+Then user enters DOB........................................................skipped
+Then user enters Gender.....................................................skipped
+Then user click signup button...............................................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: row: 1, Height: 1
+	at io.cucumber.datatable.DataTable.rangeCheckRow(DataTable.java:300)
+	at io.cucumber.datatable.DataTable.row(DataTable.java:398)
+	at stepDefinition.FacebookStepDefinition.user_enters_firstname_and_lastname(FacebookStepDefinition.java:37)
+	at ✽.user enters firstname and lastname(C:/Users/ELCOT/eclipse-workspace/Cucumber/Datadriven/src/main/java/Features/facebook.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Face book sign up" name="Facebook Test Scenario 2" time="80.506425">
+        <failure message="org.openqa.selenium.WebDriverException: chrome not reachable&#10;  (Session info: chrome=80.0.3987.149)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LENOVO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53953}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 69f87d844c3c5e2a259affa9146e5af1&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)&#13;&#10;&#9;at stepDefinition.FacebookStepDefinition.title_of_login_page_if_facebook(FacebookStepDefinition.java:29)&#13;&#10;&#9;at ✽.title of login page if facebook(C:/Users/ELCOT/eclipse-workspace/Cucumber/Datadriven/src/main/java/Features/facebook.feature:6)&#13;&#10;">
+            <![CDATA[Given User is already on Facebook Page......................................passed
+When title of login page if facebook........................................failed
+Then user enters firstname and lastname.....................................skipped
+Then user entered email and password........................................undefined
+Then user enters DOB........................................................skipped
+Then user enters Gender.....................................................skipped
+Then user click signup button...............................................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=80.0.3987.149)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53953}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 69f87d844c3c5e2a259affa9146e5af1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at stepDefinition.FacebookStepDefinition.title_of_login_page_if_facebook(FacebookStepDefinition.java:29)
+	at ✽.title of login page if facebook(C:/Users/ELCOT/eclipse-workspace/Cucumber/Datadriven/src/main/java/Features/facebook.feature:6)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

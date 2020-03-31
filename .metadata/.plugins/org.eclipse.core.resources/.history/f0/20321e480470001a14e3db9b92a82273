@@ -1,0 +1,55 @@
+package stepDefinition;
+
+import java.awt.List;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+
+public class Stepdefinition {
+	
+	//static WebDriver driver;
+	 WebDriver driver=new ChromeDriver();
+	 
+	@Given("User already in login page")
+	public void user_already_in_login_page() {
+	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\eclipse-workspace\\Cucumber\\Sample\\Driver\\chromedriver.exe");
+	   
+		driver.get("https://www.facebook.com/");
+	}
+
+	@When("title of login page is Free CRM")
+	public void title_of_login_page_is_Free_CRM() {
+		driver.findElement(By.id("email")).sendKeys("8148791285");;
+	}
+
+	@Then("user enters username and password")
+	public void user_enters_username_and_password() {
+		driver.findElement(By.id("pass"));
+	}
+
+	@Then("user click on login button")
+	public void user_click_on_login_button() {
+		
+		driver.findElement(By.id("u_0_b"));
+		
+		
+	}
+
+	@Then("user is on home page")
+	public void user_is_on_home_page() {
+
+		System.out.println("Pass");
+		
+	}
+
+
+	
+
+}

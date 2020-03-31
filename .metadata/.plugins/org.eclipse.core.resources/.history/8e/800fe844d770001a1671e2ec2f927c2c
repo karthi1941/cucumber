@@ -1,0 +1,60 @@
+package stepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import junit.framework.Assert;
+
+public class FacebookStepDefinition {
+	
+	WebDriver driver;
+	@Given("User is already on Facebook Page")
+	public void user_is_already_on_Facebook_Page() {
+		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\eclipse-workspace\\Cucumber\\Sample\\Driver\\chromedriver.exe");
+		   driver=new ChromeDriver();
+			driver.get("https://www.facebook.com/");
+	}
+
+	@When("title of login page if facebook")
+	public void title_of_login_page_if_facebook() {
+	   String title=driver.getTitle();
+	   System.out.println(title);
+	   
+	}
+
+	@Then("user enters firstname and lastname")
+	public void user_enters_firstname_and_lastname() {
+		driver.findElement(By.id("u_0_m"));
+	}
+
+	@Then("user enters email and phone")
+	public void user_enters_email_and_phone() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("user enters DOB")
+	public void user_enters_DOB() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("user enters Gender")
+	public void user_enters_Gender() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("user click signup button")
+	public void user_click_signup_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+
+	
+}

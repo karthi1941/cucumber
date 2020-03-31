@@ -1,0 +1,72 @@
+package stepDefinition;
+
+import java.awt.List;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+
+public class Stepdefinition {
+	
+	static WebDriver driver;
+	
+	@Given("User already in login page")
+	public void user_already_in_login_page() {
+	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\eclipse-workspace\\Cucumber\\Sample\\Driver\\chromedriver.exe");
+	    WebDriver driver=new ChromeDriver();
+		driver.get("http://demo.guru99.com/telecom/");
+	}
+
+	@When("title of login page is Free CRM")
+	public void title_of_login_page_is_Free_CRM() {
+		driver.findElement(By.xpath("(//a[text()='Add Customer'])[1]"));
+	}
+
+	@Then("user enters username and password")
+	public void user_enters_username_and_password() {
+		driver.findElement(By.xpath("//label[@for='done']")).click();
+		driver.findElement(By.id("fname")).sendKeys("karthi");
+		driver.findElement(By.id("lname")).sendKeys("rajan");
+		driver.findElement(By.id("email")).sendKeys("karthi@gmail.com");
+		driver.findElement(By.name("addr")).sendKeys("tanjore");
+		driver.findElement(By.id("telephoneno")).sendKeys("123456788");
+	}
+
+	@Then("user click on login button")
+	public void user_click_on_login_button() {
+		
+		
+		
+		driver.findElement(By.xpath("//label[@for='done']")).click();
+		driver.findElement(By.id("fname")).sendKeys("Karthi");
+		driver.findElement(By.id("lname")).sendKeys("Velu");
+		driver.findElement(By.id("email")).sendKeys("karthivelu1941@gmail.com");
+		driver.findElement(By.name("addr")).sendKeys("Kovilambakkam");
+		driver.findElement(By.id("telephoneno")).sendKeys("8148791285");
+		
+		
+		
+	}
+
+	@Then("user is on home page")
+	public void user_is_on_home_page() {
+
+		
+		driver.findElement(By.xpath("//label[@for='done']")).click();
+		driver.findElement(By.id("fname")).sendKeys("Karthi");
+		driver.findElement(By.id("lname")).sendKeys("Velu");
+		driver.findElement(By.id("email")).sendKeys("karthivelu1941@gmail.com");
+		driver.findElement(By.name("addr")).sendKeys("Kovilambakkam");
+		driver.findElement(By.id("telephoneno")).sendKeys("8148791285");
+	}
+
+
+	
+
+}

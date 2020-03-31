@@ -1,0 +1,20 @@
+Feature: Face book sign up
+
+
+
+Scenario Outline: Free CRM Login Test Scenario
+
+Given User is already on Facebook Page
+When title of login page if facebook
+Then user enters "<firstname>" and "<lastname>"
+Then user entered "<email>" and "<password>"
+Then user enters DOB
+Then user enters Gender
+Then user click signup button 
+Then close the browser
+
+Examples:
+|firstname|lastname|email                   |password  |
+|Jegan    |Jas     |jeganjas18@gmail.com    |8667227438|
+|Karthi   |velu    |karthivelu1941@gmail.com|8148791285|
+ 

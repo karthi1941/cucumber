@@ -1,0 +1,6 @@
+Feature: Face book sign up
+
+Scenarion Outline:Facebook registration
+
+Given User is already in login page
+When 
